@@ -109,7 +109,7 @@ int main(void)
                     break;
 
                     case 'i' | 'I' : /* if 3 | integer 6 */
-                    	if ( palavra[1] == 'f' ) {
+                    	if (palavra[1] == 'f') {
                             if ( strcmp(palavra, palavraReservada[3]) == 0 ) {
                                 strcpy(modulo, palavraReservada[3]);
                             } else {
@@ -136,7 +136,7 @@ int main(void)
                         if (strcmp(palavra, palavraReservada[5]) == 0) {
                             strcpy(modulo, palavraReservada[5]);
                         } else {
-
+                            mensagemDeErro(5, numeroDaLinhaNoArquivoComErro);
                         }
                     break;
 
@@ -144,7 +144,7 @@ int main(void)
                         if (strcmp(palavra, palavraReservada[7]) == 0) {
                             strcpy(modulo, palavraReservada[7]);
                         } else {
-
+                            mensagemDeErro(1, numeroDaLinhaNoArquivoComErro);
                         }
                     break;
 
@@ -167,5 +167,13 @@ int main(void)
         numeroDaLinhaNoArquivoComErro++;
 		tmp = tmp -> proximo;
   }
+
+    if (verificaMain > 1) {
+        mensagemDeErro(3, 0);
+    }
+    if (verificaMain == 0) {
+        mensagemDeErro(1, 0);
+    }
+    
 
 }
