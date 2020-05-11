@@ -5,7 +5,6 @@
         "lista.h": "c",
         "tabelasimbolos.h": "c",
         "erro.h": "c",
-        "memoria.h": "c",
-        "stdlib.h": "c"
+        "memoria.h": "c"
     }
 }
