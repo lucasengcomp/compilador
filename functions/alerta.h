@@ -1,5 +1,4 @@
-void alerta(int codeAlerta, int numeroLinha)
-{
+void alerta(int codeAlerta, int numeroLinha) {
     if(numeroLinha != 0) {
         printf("LINHA: %i\n", numeroLinha);
     }
